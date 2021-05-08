@@ -3,5 +3,6 @@ services:
   app:
     build: .
     volumes:
-      - .:/myapp
-    command: ruby ./main.rb
+      - .:/app
+      - ./data:/data
+    command: bundle exec ruby ./main.rb
