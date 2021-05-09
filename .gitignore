@@ -91,3 +91,4 @@ build-iPhoneSimulator/
 dev_tools/**/*
 data/*
 !data/.keep
+.env
