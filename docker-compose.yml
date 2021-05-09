@@ -2,7 +2,7 @@ version: "3.9"
 services:
   app:
     build: .
+    tty: true
     volumes:
       - .:/app
       - ./data:/data
-    command: bundle exec ruby ./main.rb

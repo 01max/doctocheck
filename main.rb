@@ -21,7 +21,8 @@ def run_check(force_output: false)
     ).result_hash
   end
 
-  return if compare_results.except(:current_resume).empty? && !force_output
+  return availabilities.archive! if compare_results.nil?
+  return if compare_results.except(:current_summary).empty? && !force_output
 
   bot_message = compare_results.map do |key, value|
     displayed_value = value.is_a?(Hash) ? "\n`#{value}`" : " : #{value}"
@@ -35,5 +36,3 @@ def run_check(force_output: false)
 
   availabilities.archive!
 end
-
-run_check(force_output: true)
