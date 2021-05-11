@@ -89,5 +89,8 @@ build-iPhoneSimulator/
 # End of https://www.toptal.com/developers/gitignore/api/ruby,macos
 
 dev_tools/**/*
+data/*
+!data/.keep
 config/doctolib.yml
+config/schedule.rb
 .env
