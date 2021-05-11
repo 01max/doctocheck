@@ -71,7 +71,7 @@ module DoctoLib
     end
 
     def data_file_path
-      "/data/#{unique_file_name}"
+      "data/#{unique_file_name}"
     end
   end
 end
