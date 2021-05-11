@@ -1,8 +1,10 @@
 # doctocheck
 
-This script check for any change in the doctolib.fr availabilities of a specific agenda (ie. doctor / medical entity) for a specific motive.
+This script check for any change in the doctolib.fr availabilities of a specific agenda (ie. doctor / medical entity) for a specific motive and then display it in a discord channel (poor man's push notification).
 
-This is a very quick & dirty draft and shouldn't be taken seriously. Please don't use it for anything serious.
+Since I got lazy at the end, the discord integration is directly in the `main.rb` 🤷
+
+This is a very quick & dirty draft and shouldn't be taken seriously. So please : don't use it for anything serious.
 
 ## Setup
 
