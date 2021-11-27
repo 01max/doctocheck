@@ -4,13 +4,13 @@ require 'dotenv'
 Dotenv.load
 
 require 'yaml'
+require 'faraday'
 require 'discordrb'
 require_relative 'lib/docto_lib'
 
 DOCTOLIB_COLLECTIONS = YAML.safe_load(File.read('config/doctolib.yml'))['doctolib_collections'].freeze
 
 def run_check(force_output: false, title: nil, visit_motive_ids: [], agenda_ids: [])
-  puts "Run check on #{agenda_ids.join(', ')} for #{visit_motive_ids.join(', ')}."
   availabilities = DoctoLib::RetrieveAvailabilities.new(
     start_date: Date.today,
     visit_motive_ids: visit_motive_ids,

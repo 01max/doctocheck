@@ -5,3 +5,6 @@ doctolib_collections:
   psv_moderna:
     visit_motive_ids: [2758875]
     agenda_ids: [458120]
+  mory_pfizer:
+    visit_motive_ids: [2542516]
+    agenda_ids: [445302, 457249]

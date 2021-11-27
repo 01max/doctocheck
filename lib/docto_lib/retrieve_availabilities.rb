@@ -19,7 +19,7 @@ module DoctoLib
 
     def process
       json_url = build_url
-      @raw_json = URI.parse(json_url).read
+      @raw_json = Faraday.get(json_url).body
       @raw_hash = JSON.parse(raw_json)
     end
 
